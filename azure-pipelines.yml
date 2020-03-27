@@ -21,6 +21,10 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
+    npm install -g snyk
+  displayName: 'install snyk'
+
+- script: |
     snyk auth $(SNYK_TOKEN)
     snyk test
   displayName: 'Scan dependencies for vulnerabilities with Snyk'

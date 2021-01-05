@@ -8,4 +8,4 @@ RUN     chown -R nginx /var/cache/nginx && \
 RUN touch /var/run/nginx.pid && \
         chown -R nginx /var/run/nginx.pid
 USER nginx
-EXPOSE 8080
+EXPOSE 8080 
